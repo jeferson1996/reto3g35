@@ -12,7 +12,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "message")
+@Table(name = "messages")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,12 +29,12 @@ public class MessageModel {
 
     @ManyToOne
     @JoinColumn(name = "car_id", nullable = false)
-    @JsonIgnoreProperties({"message","reservations"})
+    @JsonIgnoreProperties({"messages","reservations"})
     private CarModel car;
 
     @ManyToOne
     @JoinColumn(name = "client_id", nullable = false)
-    @JsonIgnoreProperties({"message","reservations"})
+    @JsonIgnoreProperties({"messages","reservations"})
     private ClientModel client;
 
 

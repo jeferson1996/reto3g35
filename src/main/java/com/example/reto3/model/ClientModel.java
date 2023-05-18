@@ -35,7 +35,7 @@ public class ClientModel {
 
 
     @OneToMany(cascade = CascadeType.MERGE , mappedBy = "client")
-    private List <MessageModel> message;
+    private List <MessageModel> messages;
 
     @OneToMany(cascade = CascadeType.MERGE, mappedBy = "client")
     private List<ReservationsModel> reservations;

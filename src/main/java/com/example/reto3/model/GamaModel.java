@@ -18,8 +18,10 @@ public class GamaModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int idGama;
+
     @Column(length = 45)
     private String name;
+
     @Column(length = 250)
     private String description;
 

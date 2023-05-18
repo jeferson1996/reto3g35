@@ -35,7 +35,8 @@ public class CarModel {
 
     @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "car")
     @JsonIgnoreProperties({"client", "car"})
-    private List <MessageModel> message;
+    private List <MessageModel> messages;
+
     @OneToMany(cascade = CascadeType.PERSIST,  mappedBy = "car")
     private List<ReservationsModel> reservations;
 }
